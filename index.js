@@ -1,3 +1,5 @@
+//if..else operator
+
 function scuberGreetingForFeet(ride){
  if (ride <= 400){
     return 'This one is on me!'
@@ -11,16 +13,42 @@ function scuberGreetingForFeet(ride){
   }
 }
 
+// ternaty opertor
+
 function ternaryCheckCity(isNYC){
   return (isNYC ?'Ok, sounds good.': 'No go.')
 }
-  console.log(isNYC);
+    //console.log(isNYC);
 
-  function ternaryCheckCity(Pittsburgh){
-    return (Pittsburgh?'Ok, sounds good.': 'No go.')
+console.log(ternaryCheckCity(true));  // Output: Ok, sounds good.
+//console.log(ternaryCheckCity(false)); // Output: No go.
+  
+
+function ternaryCheckCity(Pittsburgh){
+  return (Pittsburgh ?'No go.': 'Ok, sounds good.')
   }
-     console.log(isPittsburgh)
+    //console.log(isPittsburgh)
 
-//function switchOnCharmFromTip(){
-  // Write your code here!
-//}
+    console.log(ternaryCheckCityPittsburgh(true));  // Output: No go.
+    //console.log(ternaryCheckCityPittsburgh(false)); // Output: Ok, sounds good.
+
+//switch case operator
+
+function switchOnCharmFromTip(tip) {
+  switch (tip) {
+    case "generous":
+      return "Thank you so much.";
+    case "not as generous":
+      return "Thank you.";
+    default:
+      return "Bye.";
+  }
+}
+
+console.log(switchOnCharmFromTip("generous"));            // Output: Thank you so much.
+console.log(switchOnCharmFromTip("not as generous"));     // Output: Thank you.
+console.log(switchOnCharmFromTip("anything else")); // Output: Bye.
+
+
+
+
